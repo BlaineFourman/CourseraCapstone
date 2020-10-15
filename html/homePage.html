@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  	<meta charset="utf-8">
+
+  	<title>All About Sharks</title>
+  	<meta name="description" content="All about Sharks">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="stylesheet" href="../css/stylePages.css">
+  	<!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> -->
+  	<link rel="stylesheet" href="../css/ui-carousel.min.css">
+	<script src="../javascript/ui-carousel.min.js"></script>
+	<script src="../javascript/favoriteCarousel.js"></script>
+	<script src="../javascript/newFact.js"></script>
+</head>
+
+<body class="homePage">
+
+	<!-- Header Bar -->
+	<header>
+		<!-- The background image for the top part of the page -->
+		<img src="../images/water.jpg" alt="Header background image of water just under the surface">
+
+		<!-- Contains the nav links -->
+		<!-- Drop down for mobile and listed for web -->
+		<div>
+			<a href="favoritePage.html">My Favorite Shark</a>
+			<a id="activePage" href="homePage.html">Shark Facts</a>
+			<a href="listPage.html">Types of Sharks</a>
+		</div>
+	</header>
+
+	<div id="contentContainer">
+		<div class="content">
+			<!-- General Shark Facts  -->
+			<ul>
+				<li>Scientists age sharks by counting the rings on their vertebrae.
+					<p>
+						Much like trees, sharks get bands on their vertebrae as they grow. By counting the rings scientists can get a rough estimate of how old the shark is.
+					</p>
+				</li>
+				<li class="secondItem">Each whale shark’s spot pattern is unique as a fingerprint.
+					<p>
+						The white spots are unique to each whale shark and can be used to identify them.	
+					</p>
+				</li>
+			</ul>
+			<ul>
+				<li>Sharks can go into a trance.
+					<p>When a shark gets upside down sharks go into tonic immobility. While in this state, they are unable to move.</p>
+				</li>
+				<li class="secondItem">Sharks do not have bones
+					<p>
+						Instead of having bones sharks have cartilidge. This prevents them from sinking to the bottom of the ocean.
+					</p>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Div for the shark breach animation -->
+			<div id="animation"> 
+
+				<iframe src="https://giphy.com/embed/11xNRqjzsILefu" class="giphy-embed"></iframe>
+				<button onclick='newFact()'> Secret Button </button>
+			</div>
+	</div>
+	<footer>
+		<p>
+			These facts were found at <a href="https://www.fisheries.noaa.gov/feature-story/12-shark-facts-may-surprise-you">fisheries.noaa.gov</a>
+		</p>
+	</footer>
+</body>
+</html>

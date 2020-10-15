@@ -1,0 +1,399 @@
+
+/* Adds a load in transition when the page loads in */
+.content {
+	animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+	from {
+		opacity: 0;
+		transform: rotateX(-20deg);
+	}
+
+	to {
+		opacity: 1;
+		transform: rotateX(0);
+	}
+}
+
+	#activePage {
+		transform: scale(1.3);
+	}
+
+/* For small screens */
+@media only screen and (max-width: 767px) {
+	/* Header pertains to the header on all pages */
+	header img {
+		border-radius: 20px 20px 0px 0px;
+		width: 100%;
+		height: 250px;
+		margin: 0px;
+		padding: 0px;
+		display: block;
+	}
+
+
+	header div {
+		text-align: center;
+		margin: 0px;
+		margin-bottom: 5%;
+		padding: 2%;
+		border-radius:0px 0px 15px 15px;
+		background: #012e43;
+	}
+
+	header a {
+		border-radius: 12px;
+		background-color: #e4e5e7;
+		padding: 1%;
+		margin-left: 4%;
+		margin-right: 4%; 
+		display: inline-block;
+		color: #012e43;
+	}
+
+	body {
+		background-color: #e4e5e7;
+	}
+
+
+
+
+	/* The body of the content excluding the footer and header */
+
+	/* Body/container classes to set up sticky footer on the main page */
+
+	#mainPage {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}
+
+	#contentContainer {
+		flex:1;
+
+	}
+
+	.content {
+		display: block;
+		text-align: center;
+	}
+
+	.content img {
+		border-radius: 20px;
+		width: 50%;
+		display: inline-block;
+	}
+
+	/* scaling the animation on homePage.html */
+	#animation {
+		text-align: center;
+		pointer-events: none;
+		margin: auto;
+		width: 75%;
+	}
+
+	#animation > button {
+		pointer-events: auto;
+		position: absolute;
+		top: 830px;
+		left: 0px;
+		height: 180px;
+		width: 100%;
+		opacity: 0.0;  	/*	Modify this value if you want to find the secret button	*/
+		margin: auto;
+		background-color: #000000;
+	}
+
+	#contentContainer > p {
+		display: block;
+	} 
+
+	footer {
+		padding: 30px;
+		padding-right: 0px;
+		padding-left: 0px;
+		width: 100%;
+		background-color: #B0B0B0;
+	}
+
+	footer p {
+		margin: 25px;
+	}
+
+	ul {
+		display: block;
+		list-style: none;
+	}
+
+
+
+	li {
+		background-color: #b0cae5;
+		padding: 2%;
+		margin: 2%;
+		width: 25%;
+		border-radius: 18px;
+		display: inline-block;
+
+		/* To reset the transition after it has gotten bigger */
+		transition-duration: 0.5s;
+		transform: scale(1);
+	}
+
+	li:hover {
+		transition-duration: 0.5s;
+		transform: scale(1.1);
+		border-color: #8ca1b7;
+	}
+
+	/* spans control the content to the side of images on listPage.html*/
+	.span {
+		vertical-align: top;
+		display: inline-block;
+
+		margin: 0px;
+		padding: 0px;
+	}
+
+	div img {
+		margin: 0px;
+		padding: 0px;
+		margin-bottom: 0%;
+	}
+	div p {
+		padding-bottom: 60px;
+	}
+
+	h2 {
+		display: block;
+	}
+
+	p {
+		display: inline-block;
+	}
+
+	.rightList {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.rightList img {
+		order: 1;
+		text-align: center;
+	}
+
+	.rightList div {
+		order: 2;
+		text-align: center;
+	}
+
+
+
+	/* adjusting the carosel on favorite page */
+	.box-container img {
+		max-height: 400px;
+	}}
+
+
+/* For large screens */
+@media only screen and (min-width: 768px) {
+	/* Header pertains to the header on all pages */
+	header img {
+		border-radius: 20px 20px 0px 0px;
+		width: 100%;
+		height: 250px;
+		margin: 0px;
+		padding: 0px;
+		display: block;
+	}
+
+
+	header div {
+		text-align: center;
+		margin: 0px;
+		margin-bottom: 5%;
+		padding: 2%;
+		border-radius:0px 0px 15px 15px;
+		background: #012e43;
+	}
+
+	header a {
+		border-radius: 12px;
+		background-color: #e4e5e7;
+		padding: 1%;
+		margin-left: 4%;
+		margin-right: 4%; 
+		display: inline-block;
+		color: #012e43;
+	}
+
+	body {
+		background-color: #e4e5e7;
+	}
+
+	/* The body of the content excluding the footer and header */
+
+	/* Body/container classes to set up sticky footer on the main page */
+
+	#mainPage {
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+	}
+
+	#contentContainer {
+		flex:1;
+
+	}
+
+	.content {
+		display: block;
+		text-align: center;
+	}
+
+	.content img {
+		margin-bottom: 5%;
+		border-radius: 20px;
+		width: 50%;
+		display: inline-block;
+	}
+
+	/* scaling the animation on homePage.html */
+	#animation {
+		text-align: center;
+		pointer-events: none;
+		margin: auto;
+		width: 75%;
+	}
+
+	#animation > button {
+		pointer-events: auto;
+		position: absolute;
+		top: 780px;
+		left: 0px;
+		height: 180px;
+		width: 100%;
+		opacity: 0.0;  	/*	Modify this value if you want to find the secret button	*/
+		margin: auto;
+		background-color: #000000;
+	}
+
+	#contentContainer > p {
+		display: block;
+	} 
+
+	footer {
+		padding: 30px;
+		padding-right: 0px;
+		padding-left: 0px;
+		width: 100%;
+		background-color: #B0B0B0;
+	}
+
+	footer p {
+		margin: 25px;
+	}
+
+	ul {
+		margin:0px;
+		padding: 0px;
+		border:0px;
+		display: inline;
+		list-style: none;
+		text-align: center;
+	}
+
+
+
+	li {
+		min-height: 100%;
+		background-color: #b0cae5;
+		display: inline-block;
+		margin: 2%;
+		padding: 2%;
+		width: 15%;
+		border-radius: 18px;
+
+		/* To reset the transition after it has gotten bigger */
+		transition-duration: 0.5s;
+		transform: scale(1);
+	}
+
+	li:hover {
+		transition-duration: 0.5s;
+		transform: scale(1.1);
+		border-color: #8ca1b7;
+	}
+
+
+	/* spans control the content to the side of images on listPage.html*/
+	.span {
+		max-width: 40%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		vertical-align: top;
+		display: inline-block;
+	}
+
+
+	.rightList p {
+		display: inline;
+		float: left;
+	}
+	.rightList img {
+		display: inline;
+		float: right;
+		max-width: 40%;
+		vertical-align: middle;
+	}
+
+	.leftList p{
+		float: right;
+	}
+	.leftList img {
+		float: left: 
+		max-width: 40%;
+		vertical-align: middle;
+	}
+
+	h2 {
+		display: block;
+	}
+
+	p {
+		display: inline-block;
+	}
+
+	body .content {
+		display: inline;
+		font-size: large;
+	}
+
+	.favoritePage section {
+		max-width: 40%;
+		display: inline;
+		text-align: center;
+	}
+
+
+/*	.carousel {
+		display: inline-block;
+		max-width: 40%;
+	}*/
+
+	/* adjusting the carosel on favorite page */
+	.box-container img {
+		max-height: 400px;
+	}
+
+	.ui-icon-next {
+		display: none;
+	}
+
+}

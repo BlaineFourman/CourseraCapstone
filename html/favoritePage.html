@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>My Favorite Shark</title>
+	<meta name="description" content="My Favorite shark">
+	<link rel="stylesheet" href="../css/stylePages.css">
+	<link rel="stylesheet" href="../css/ui-carousel.min.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+	<script src="../javascript/ui-carousel.min.js"></script>
+	<script src="../javascript/favoriteCarousel.js"></script>
+
+</head>
+
+<body class="favoritePage">
+	<!-- Header Bar -->
+	<header>
+		<!-- The background image for the top part of the page -->
+		<img src="../images/water.jpg" alt="Header background image of water just under the surface">
+
+		<!-- Contains the nav links -->
+		<!-- Drop down for mobile and listed for web -->
+		<div>
+			<a id="activePage" href="favoritePage.html">My Favorite Shark</a>
+			<a href="homePage.html">Shark Facts</a>
+			<a href="listPage.html">Types of Sharks</a>
+		</div>
+	</header>
+
+	<div class="content">
+		<!-- All of the facts about great whites -->
+		<section>
+			<h1> Great White </h1>
+			<p>The Great White Shark is an incredible animal. They grow up to 6,600 pounds and 20 feet long! Great whites have very cool hunting tactics. To hunt seals, they lurk in the depths of the ocean until they see a seal above them. They then swim as fast as they can towards the surface. Once at the surface, they breach the water and soar through the air with the seal in their mouth. The seal never knew what hit them! </p>
+		</section>
+
+		<!-- Div for the carosel -->
+		<div class="carousel" ng-app="carouselApp">
+			<div ng-controller="CarouselDemoController as carouselDemo">
+				<div class="box-container">
+					
+					<ui-carousel slides="carouselDemo.slides" on-init="carouselDemo.onCarouselInit()" slides-to-show="1" slides-to-scroll="1" initial-slide="0" autoplay="true" autoplay-speed="3000">
+						<!-- For slider render -->
+						<carousel-item>
+							<!-- placed your item content here -->
+							<img src="{{ item.image }}" alt="Image" />
+							<!-- end -->
+						</carousel-item>
+					</ui-carousel>
+				</div>
+			</div>
+		</div>
+
+		
+	</div>
+
+</body>
+</html>
